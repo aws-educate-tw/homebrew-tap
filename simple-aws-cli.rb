@@ -5,21 +5,21 @@
 class SimpleAwsCli < Formula
   desc "A simple CLI for common AWS tasks."
   homepage "https://github.com/aws-educate-tw/simple-aws-cli"
-  version "0.2.1"
+  version "0.3.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.2.1/simple-aws-cli_0.2.1_darwin_amd64.tar.gz"
-      sha256 "42aeab773d34fac7140cf5ad11dd0287f46aa2bd0393527224b4fe717ce68f0b"
+      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.3.0/simple-aws-cli_0.3.0_darwin_amd64.tar.gz"
+      sha256 "1224e8db2b8455e7eac965bb9f97d06241c954b5b9e14d11e394b3a01749663b"
 
       def install
         bin.install "simple-aws-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.2.1/simple-aws-cli_0.2.1_darwin_arm64.tar.gz"
-      sha256 "33d82e6f45a8354f2dadf51eec93c8a53ba3ec2be96efba6e4f571501cf8d65a"
+      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.3.0/simple-aws-cli_0.3.0_darwin_arm64.tar.gz"
+      sha256 "af3e75a49d18e6a11a75a2073d06f199483446b78d3828467de198c97d5ee73f"
 
       def install
         bin.install "simple-aws-cli"
@@ -29,15 +29,15 @@ class SimpleAwsCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.2.1/simple-aws-cli_0.2.1_linux_amd64.tar.gz"
-      sha256 "fcc7c5f0ddd5cadf04c41482d135695580c03e5fc077dde0487f33e1277e0e87"
+      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.3.0/simple-aws-cli_0.3.0_linux_amd64.tar.gz"
+      sha256 "641566486b128484782ccebe0a223822a384df12a02f12b3a7d5ee879a4bd178"
       def install
         bin.install "simple-aws-cli"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.2.1/simple-aws-cli_0.2.1_linux_arm64.tar.gz"
-      sha256 "6c96ccf030b39a2cef7979b7ee8111d813a51b02f08e95b34f3e81d4b38f21ae"
+      url "https://github.com/aws-educate-tw/simple-aws-cli/releases/download/v0.3.0/simple-aws-cli_0.3.0_linux_arm64.tar.gz"
+      sha256 "3ca727ef7a364401639c94f47c2356be42385ed7676418206c169a1c276edf75"
       def install
         bin.install "simple-aws-cli"
       end
